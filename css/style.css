@@ -2,8 +2,10 @@
     --color-primary: #8d99ae;
     --color-secondary: #2b2d42;
     --color-accent: #ef233c;
-    --color-heading: #edf2f4;
+    --color-text: #edf2f4;
     --color-headingDarker: #d90429;
+    --color-hgDarker: #080808;
+    
 }
 
 html {
@@ -15,35 +17,52 @@ background-image: url('/images/background.jpg');
 background-repeat: no-repeat;
 background-attachment: fixed;
 background-size: cover;
-color: var(--color-secondary);
+color: var(--color-text);
 font-family: 'Rubik Dirt', cursive;
-/* scroll bla */
+/* height:   ; */
+overflow-y: scroll;
 font-size: 2rem;
+scroll-snap-type: y mandatory;
 }
 
 .headings{
     margin: 1rem;
     font-size: 3rem;
-    color: var(--color-heading);
     font-family: 'Bebas Neue', cursive;
 }
+.text{
+    font-family: 'Bebas Neue';
+}
+.box{
+    
+    border: var(--color-secondary) 2px solid;
+    width: 90%;
+    margin: 3rem auto 7rem auto;
+    border-radius: 10px;
 
-/* Nav Bar */
+}
+
+/* ==============================================Nav Bar */
 .navBar{
     position: sticky;
     height: 5rem;
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: var(--color-accent);
     color: var(--color-heading);
     flex-direction: row;
     top: 0;
     border-bottom: ridge 0.5rem var(--color-heading);
+    z-index: 10;
 }
 
 .logo{
-    margin: 1rem;
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+    width: 15rem;
+    /* object-fit: cover; */
 }
 .navRight{
     display: flex;
@@ -61,10 +80,27 @@ font-size: 2rem;
     transition: all 0.2s;
     text-decoration: underline;
 }
-/* Projects */
-/* .projectBox{
-    
-} */
+
+
+
+/* ABOUT----------------------------------------- */
+#about{
+    min-height: 50rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.details{
+    margin: 3rem auto 3rem 5rem;
+}
+
+
+
+
+
+
+
+/*                      ----------------- Projects */
 .projects{
     width: 80%;
     display: grid;
@@ -75,7 +111,7 @@ font-size: 2rem;
 }
 .project{
     
-    background: var(--color-secondary);
+    background: transparent;
     
     margin: 0rem 1rem;
     object-fit: contain;
@@ -90,3 +126,6 @@ font-size: 2rem;
     transform: scale(1.1);
     transition: all 0.3s;
 }
+
+
+/* ======================Contacts */

@@ -17,47 +17,65 @@
   </head>
   <body>
     <!-- NAV BAR -->
+
     <nav class="navBar">
-      <p class="logo">Lorem, ipsum.</p>
+      <div><img class="logo" src="/images/l.svg" alt="" /></div>
       <div class="navRight">
-        <a href="" class="navLink"><span>About Me</span></a>
+        <a href="#about" class="navLink"><span>About Me</span></a>
         <a href="" class="navLink"><span>Skills</span></a>
         <a href="#projectBox" class="navLink"><span>Projects</span></a>
-        <a href="" class="navLink"><span>Contact</span></a>
+        <a href="#contactBox" class="navLink"><span>Contact</span></a>
       </div>
     </nav>
 
     <!-- About Me -->
-    <section class="about">
-      <h2>Hey!</h2>
+
+    <section class="box" id="about">
+      <div class="details">
+        <h2 class="headings">
+          Hello! <br />
+          My name is <br />
+          Pushkar Khare
+        </h2>
+        <p class="text">I am a Front-end Web developer/ python developer</p>
+      </div>
+      <div class="profilePic">
+        <img src="/images/background2.webp" alt="" />
+      </div>
     </section>
 
-    <!-- Projects -->
-    <section class="projectBox">
+    <!--=================== Projects -->
+
+    <section class="box" id="projectBox">
       <h2 class="headings">Projects</h2>
       <hr />
       <div class="projects">
         <div class="project">
-          <a href="https://pushkar-28.github.io/StrangerThingsClone/">
+          <a
+            href="https://pushkar-28.github.io/StrangerThingsClone/"
+            target="_blank"
+          >
             <img src="images/strangerThings.jpg" alt="" />
           </a>
         </div>
         <div class="project">
-          <a href="https://pushkar-28.github.io/TimeWaste/"
+          <a href="https://pushkar-28.github.io/TimeWaste/" target="_blank"
             ><img src="images/TimeWaste.jpg" alt=""
           /></a>
         </div>
         <div class="project">
-          <a href="https://pushkar-28.github.io/Drum-kit/"
+          <a target="_blank" href="https://pushkar-28.github.io/Drum-kit/"
             ><img src="images/DrumKit.jpg" alt=""
           /></a>
         </div>
         <div class="project">
-          <a href="https://pushkar-28.github.io/GuessGame/"
+          <a target="_blank" href="https://pushkar-28.github.io/GuessGame/"
             ><img src="images/GuessGame.jpg" alt=""
           /></a>
         </div>
       </div>
     </section>
+
+    <section class="box" id="contactBox"></section>
   </body>
 </html>
