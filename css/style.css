@@ -4,26 +4,32 @@
     --color-accent: #ef233c;
     --color-heading: #edf2f4;
     --color-headingDarker: #d90429;
-    /* 1- 2b2d42
-    2-8d99ae
-    3-edf2f4
-    4-ef233c
-    5-d90429*/
+}
+
+html {
+    font-size: 62.5%;
 }
 
 body{
-background: var(--color-primary);
+background-image: url('/images/background.jpg');
+background-repeat: no-repeat;
+background-size: cover;
 color: var(--color-secondary);
+font-family: 'Rubik Dirt', cursive;
 /* scroll bla */
+font-size: 2rem;
 }
 
 .headings{
     margin: 1rem;
+    font-size: 3rem;
+    color: var(--color-heading);
+    font-family: 'Bebas Neue', cursive;
 }
 
 /* Nav Bar */
 .navBar{
-    height: 3rem;
+    height: 5rem;
     display: flex;
     justify-content: space-between;
     background-color: var(--color-accent);
@@ -44,20 +50,38 @@ color: var(--color-secondary);
     color: var(--color-heading);
     padding: 1rem;
 }
+
+.navLink:hover{
+    transform: scale(1.1);
+    transition: all 0.2s;
+    text-decoration: ;
+}
 /* Projects */
+.projectBox{
+    
+}
 .projects{
+    width: 80%;
     display: grid;
+    margin: auto;
     grid-template-columns: auto auto;
-    margin: 2rem;
+    margin: 2rem auto;
+    gap: 1rem;
 }
 .project{
-    width: 30%;
-    background: var(--color-heading);
-    gap: 1rem 1rem;
-    margin-bottom: 1rem;
+    
+    background: var(--color-secondary);
+    
+    margin: 0rem 1rem;
+    object-fit: contain;
+    height: 95.5%;
     border: 0.5rem solid var(--color-headingDarker);
+
+}
+.project img{
+    width: 100%;
 }
 .project:hover{
     transform: scale(1.1);
-    transition: all 0.2s;
+    transition: all 0.3s;
 }
