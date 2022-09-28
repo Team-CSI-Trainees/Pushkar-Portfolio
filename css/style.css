@@ -1,0 +1,63 @@
+:root{
+    --color-primary: #8d99ae;
+    --color-secondary: #2b2d42;
+    --color-accent: #ef233c;
+    --color-heading: #edf2f4;
+    --color-headingDarker: #d90429;
+    /* 1- 2b2d42
+    2-8d99ae
+    3-edf2f4
+    4-ef233c
+    5-d90429*/
+}
+
+body{
+background: var(--color-primary);
+color: var(--color-secondary);
+/* scroll bla */
+}
+
+.headings{
+    margin: 1rem;
+}
+
+/* Nav Bar */
+.navBar{
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-accent);
+    color: var(--color-heading);
+    flex-direction: row;
+}
+
+.logo{
+    margin: 1rem;
+}
+.navRight{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.navLink{
+    text-decoration: none;
+    color: var(--color-heading);
+    padding: 1rem;
+}
+/* Projects */
+.projects{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 2rem;
+}
+.project{
+    width: 30%;
+    background: var(--color-heading);
+    gap: 1rem 1rem;
+    margin-bottom: 1rem;
+    border: 0.5rem solid var(--color-headingDarker);
+}
+.project:hover{
+    transform: scale(1.1);
+    transition: all 0.2s;
+}
