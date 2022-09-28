@@ -13,6 +13,7 @@ html {
 body{
 background-image: url('/images/background.jpg');
 background-repeat: no-repeat;
+background-attachment: fixed;
 background-size: cover;
 color: var(--color-secondary);
 font-family: 'Rubik Dirt', cursive;
@@ -29,12 +30,16 @@ font-size: 2rem;
 
 /* Nav Bar */
 .navBar{
+    position: sticky;
     height: 5rem;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     background-color: var(--color-accent);
     color: var(--color-heading);
     flex-direction: row;
+    top: 0;
+    border-bottom: ridge 0.5rem var(--color-heading);
 }
 
 .logo{
@@ -54,12 +59,12 @@ font-size: 2rem;
 .navLink:hover{
     transform: scale(1.1);
     transition: all 0.2s;
-    text-decoration: ;
+    text-decoration: underline;
 }
 /* Projects */
-.projectBox{
+/* .projectBox{
     
-}
+} */
 .projects{
     width: 80%;
     display: grid;
