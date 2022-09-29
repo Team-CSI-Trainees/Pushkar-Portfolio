@@ -20,7 +20,7 @@ background-attachment: fixed;
 background-size: cover;
 color: var(--color-text);
 font-family: 'Bebas Neue';
-height: 180vh;
+height: 240vh;
 /* height:   ; */
 overflow-y: scroll;
 font-size: 2rem;
@@ -48,7 +48,10 @@ section{
     box-shadow: 0 0 5px 5px;
 
 }
-
+.boxTop{
+    height: 5rem;
+    visibility: hidden;
+}
 
 /* ==============================================Nav Bar */
 
@@ -104,16 +107,25 @@ section{
 }
 .details{
     margin: 3rem 3rem 2rem 5rem;
+    overflow-y: hidden;
+    /* scrollbar-width: none; */
+    scrollbar-width: none;
+    width: 50%;
 }
 
 
 .profilePic{
     width: 30%;
-    margin-right: 2rem;
+    margin-right: 3rem;
+    /* opacity: 0.9; */
+    filter: grayscale(1.5);
 }
 .profilePic:hover{
     box-shadow: 0 0 1rem 0.5rem;
-    transition: all 0.2s;
+    transform: scale(1.05);
+    transition: all 0.3s;
+    opacity: 1;
+    filter: grayscale(0);
 }
 .profilePic > img{
     width: 100%;
@@ -195,15 +207,14 @@ margin-left: 33.3%;
 
 .top{
     border-radius: 50%;
-    position: relative;
-    left: 10rem;
-    bottom: 20rem;
+    position: fixed;
+    display: none;
+    left: 9rem;
+    bottom: 7rem;
+    z-index: 20;
+    cursor: pointer;
+
 }
-
-
-
-
-
 
 
 

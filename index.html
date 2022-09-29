@@ -21,9 +21,9 @@
     <nav class="navBar">
       <div><img class="logo" src="/images/l.svg" alt="" /></div>
       <div class="navRight">
-        <a href="#about" class="navLink"><span>About Me</span></a>
-        <a href="" class="navLink"><span>Skills</span></a>
-        <a href="#projectBox" class="navLink"><span>Projects</span></a>
+        <a href="#aboutTop" class="navLink"><span>About Me</span></a>
+        <a href="#skillsTop" class="navLink"><span>Skills</span></a>
+        <a href="#projectBoxTop" class="navLink"><span>Projects</span></a>
         <a href="#contactBox" class="navLink"><span>Contact</span></a>
       </div>
     </nav>
@@ -31,6 +31,7 @@
 
     <!-- About Me -->
 
+    <div class="boxTop" id="aboutTop"></div>
     <section class="box" id="about">
       <div class="details">
         <h2 class="headings">
@@ -38,15 +39,27 @@
           My name is <br />
           Pushkar Khare
         </h2>
-        <p class="text">I am a Front-end Web developer/ python developer</p>
+        <p class="text">
+          I am a Front-end Web developer/ python developer <br />I am currently
+          pursuing B.Tech CSE from AKGEC, Ghaziabad and I am also a trainee at
+          Computer Society of India. <br />
+          I am from Varanasi and I like playing guitar.
+        </p>
       </div>
       <div class="profilePic">
         <img src="/images/pic.jpg" alt="" />
       </div>
     </section>
 
+    <!-- SKILLS -->
+    <div class="boxTop" id="skillsTop"></div>
+    <section id="skills" class="box">
+      <h2 class="headings">Skills</h2>
+      <hr />
+      <p>Languages</p>
+    </section>
     <!--=================== Projects -->
-
+    <div class="boxTop" id="projectBoxTop"></div>
     <section class="box" id="projectBox">
       <h2 class="headings">Projects</h2>
       <hr />
@@ -77,6 +90,7 @@
       </div>
     </section>
 
+    <div class="boxTop"></div>
     <section class="box" id="contactBox">
       <div class="contactForm">
         <h2 class="headings">Contact Me</h2>
@@ -98,7 +112,7 @@
     </section>
 
     <!-- TOP BUTTON -->
-    <!-- <img src="/icons/arrow.svg" class="top" /> -->
+    <img src="/icons/arrow.svg" class="top" id="topButton" />
     <!-- Contacts -->
     <ul class="contact">
       <li>
@@ -139,5 +153,8 @@
         /></a>
       </li>
     </ul>
+
+    <!-- Adding Javascript -->
+    <script src="script.js"></script>
   </body>
 </html>
