@@ -27,6 +27,7 @@
         <a href="#contactBox" class="navLink"><span>Contact</span></a>
       </div>
     </nav>
+    <!-- <hr /> -->
 
     <!-- About Me -->
 
@@ -40,7 +41,7 @@
         <p class="text">I am a Front-end Web developer/ python developer</p>
       </div>
       <div class="profilePic">
-        <img src="/images/background2.webp" alt="" />
+        <img src="/images/pic.jpg" alt="" />
       </div>
     </section>
 
@@ -79,22 +80,25 @@
     <section class="box" id="contactBox">
       <div class="contactForm">
         <h2 class="headings">Contact Me</h2>
-        <form action="">
-          <input type="text" placeholder="Name" />
-          <input type="text" placeholder="Email" required />
-          <input type="text" placeholder="Subject" />
+        <form action="https://formspree.io/f/xknebwyj" method="post">
+          <input type="text" placeholder="Name" name="name" required />
+          <input type="email" placeholder="Email" name="email" required />
+          <input type="text" placeholder="Subject" name="subject" required />
           <textarea
             type="text"
             placeholder="Message"
             required
             rows="5"
             cols="23"
+            name="message"
           ></textarea>
-          <input type="submit" placeholder="Submit" />
+          <button type="submit" class="submitForm">Submit</button>
         </form>
       </div>
     </section>
 
+    <!-- TOP BUTTON -->
+    <!-- <img src="/icons/arrow.svg" class="top" /> -->
     <!-- Contacts -->
     <ul class="contact">
       <li>
