@@ -112,13 +112,21 @@ section{
     scrollbar-width: none;
     width: 50%;
 }
+.nextLine{
+    display: block;
+}
 
-
+.text{
+    margin-left: 1.2rem;
+}
 .profilePic{
     width: 30%;
     margin-right: 3rem;
     /* opacity: 0.9; */
+    display: flex;
+    justify-content: center;
     filter: grayscale(1.5);
+    border-radius: 50%;
 }
 .profilePic:hover{
     box-shadow: 0 0 1rem 0.5rem;
@@ -128,6 +136,7 @@ section{
     filter: grayscale(0);
 }
 .profilePic > img{
+    border-radius: 50%;
     width: 100%;
 }
 
@@ -135,12 +144,11 @@ section{
 
 /*                      ----------------- Projects */
 .projects{
-    width: 65%;
+    width: 90%;
     display: grid;
-    margin: auto;
     min-height: 40rem;
     grid-template-columns: auto auto;
-    margin: 2rem auto;
+    margin: 4rem auto;
     gap: 1rem;
 }
 .project{
@@ -162,6 +170,13 @@ section{
     transition: all 0.3s;
 }
 
+    /* .description{
+        /* visibility: hidden; */
+        /* width: inherit;
+        display: none;
+    } */
+
+
 
 /* ======================Contacts */
 #contactBox{
@@ -173,26 +188,31 @@ section{
     /* border: var(--color-headingDarker) groove 10px; */
     display: flex;
     width: 30%;
-    padding: 5rem;
-    margin: 5rem;
+    padding: 2rem;
+    margin: 2rem;
     flex-direction: column;
     border-radius: 4rem;
+    margin-right: 5%;
     box-shadow:  0px 0px 8px 3px #898686;
 }
 
 
     
 input, textarea, .submitForm{
-    padding: 1rem;
+    padding: 0.8rem;
+    width: 80%;
     background: var(--color-text);
     border: var(--color-text) 2px ridge;
     color:var(--color-secondary);
     margin: 1rem;
+    /* width: 20    rem; */
     border-radius: 10px;
+    max-width: 200px;
 }
 
 .submitForm{
 margin-left: 33.3%;
+width: auto;
 }
 .submitForm:hover{
     background:var(--color-headingDarker);
@@ -214,6 +234,9 @@ margin-left: 33.3%;
     z-index: 20;
     cursor: pointer;
 
+}
+.top:hover{
+    box-shadow:  0 0 5px 2px;
 }
 
 
@@ -237,4 +260,72 @@ margin-left: 33.3%;
 .icons:hover{
     transform: scale(1.7);   
     transition: transfrom 0.8s;
+}
+
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width:950px) {
+    .contactForm{
+        width: 35%;
+        margin-right:0 ;
+    }
+    #contactBox{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:767px) {
+    /* About section */
+    #about{
+        flex-direction: column-reverse;
+        position: relative;
+    }
+    .profilePic{
+        margin-top: 3rem;
+        width: 40%;
+        margin-right: 2rem;
+        border-radius: 0;
+    }
+
+    .profilePic > img{
+        border-radius: 0;
+        width: 100%;
+        
+    }
+    .headings{
+        font-weight: 100;
+    }
+    .details{
+        font-weight: 100;
+        margin: 3rem auto 2rem 3rem;
+        width: 90%;
+    }
+    .nextLine{
+        display: inline;
+    }
+
+
+    /* Projects section */
+    .projects{
+        grid-template-columns: auto;
+        width: 70%;
+    }
+    .project{
+        height: 80%;
+    }
+
+
+    /* Contact Form */
+    /* input,textarea{
+        width: 80%;
+        
+        padding: 0.3rem;
+        margin: 0.7rem auto;
+    
+    } */
+    .contactForm{
+        /* margin-right: 7%; */
+        width: 40%;
+    }
 }

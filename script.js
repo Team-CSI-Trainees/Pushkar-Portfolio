@@ -16,3 +16,13 @@ function topFunc (){
     document.documentElement.scrollTop = 0;
 }
 topButton.addEventListener('click',topFunc);
+
+
+
+// Collapse nav bar
+const collapsibles = document.querySelectorAll(".collapsible");
+collapsibles.forEach((item) =>
+  item.addEventListener("click", function () {
+    this.classList.toggle("collapsible--expanded");
+  })
+);
