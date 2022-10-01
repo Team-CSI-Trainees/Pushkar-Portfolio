@@ -119,6 +119,7 @@ section{
 }
 .nextLine{
     display: block;
+    color: var(--color-accent);
 }
 
 .text{
