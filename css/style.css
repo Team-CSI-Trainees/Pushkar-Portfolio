@@ -15,7 +15,7 @@ html {
 }
 
 body{
-background-image: url('images/background.jpg');
+background-image: url('/images/background.jpg');
 background-repeat: no-repeat;
 background-attachment: fixed;
 background-size: cover;
@@ -104,14 +104,10 @@ section{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    /* background: var(--color-text); */
+    background: url('/images/backgroundBlur.webp');
+    
 }
-.blurEffect{
-    /* filter: blur(10px); */
-    background: url(images/backgroundBlur.webp);
-    /* backdrop-filter: blur(10px); */
 
-}
 .details{
     margin: 3rem 2rem 2rem 5rem;
     overflow-y: hidden;
