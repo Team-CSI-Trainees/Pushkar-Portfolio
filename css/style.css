@@ -5,6 +5,7 @@
     --color-text: #edf2f4;
     --color-headingDarker: #d90429;
     --color-hgDarker: #080808;
+    --color-textAlt: #090797;
     
 }
 
@@ -25,6 +26,7 @@ height: 240vh;
 overflow-y: scroll;
 font-size: 2rem;
 scroll-snap-type: y mandatory;
+
 }
 section{
     scroll-snap-align: start;
@@ -95,8 +97,6 @@ section{
     text-decoration: underline;
 }
 
-
-
 /* ABOUT----------------------------------------- */
 #about{
     min-height: 50rem;
@@ -104,13 +104,22 @@ section{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    /* background: var(--color-text); */
+}
+.blurEffect{
+    /* filter: blur(10px); */
+    background: url(/images/backgroundBlur.webp);
+    /* backdrop-filter: blur(10px); */
+
 }
 .details{
-    margin: 3rem 3rem 2rem 5rem;
+    margin: 3rem 2rem 2rem 5rem;
     overflow-y: hidden;
     /* scrollbar-width: none; */
     scrollbar-width: none;
-    width: 50%;
+    color: var(--color-text);
+    width: 60%;
+    filter: blur(0);
 }
 .nextLine{
     display: block;
@@ -120,27 +129,35 @@ section{
     margin-left: 1.2rem;
 }
 .profilePic{
-    width: 30%;
-    margin-right: 3rem;
+    /* width: 30%; */
+    width: 90%;
+    /* margin-right: 3rem; */
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     /* opacity: 0.9; */
     display: flex;
     justify-content: center;
     filter: grayscale(1.5);
-    border-radius: 50%;
+    /* border-radius: 50%; */
+    border-radius: 0%;
 }
 .profilePic:hover{
-    box-shadow: 0 0 1rem 0.5rem;
+    /* box-shadow: 0 0 1rem 0.5rem; */
     transform: scale(1.05);
     transition: all 0.3s;
     opacity: 1;
     filter: grayscale(0);
 }
 .profilePic > img{
-    border-radius: 50%;
-    width: 100%;
+    /* border-radius: 50%; */
+    width: 50%;
+    /* width: 30%; */
 }
 
-
+/* ---------------Skills */
+#skillDetails{
+    padding-left: 2rem;
+}
 
 /*                      ----------------- Projects */
 .projects{
@@ -196,7 +213,9 @@ section{
     box-shadow:  0px 0px 8px 3px #898686;
 }
 
-
+.contactForm hr{
+    width: 90%;
+}
     
 input, textarea, .submitForm{
     padding: 0.8rem;
@@ -360,7 +379,7 @@ width: auto;
 
     /* box */
     .box{
-        margin-left: 8%;
+        margin-left: 4%;
         /* width: 100%; */
         /* margin-right: 4%; */
         /* margin-left: 12.5%; */
@@ -385,7 +404,7 @@ width: auto;
 
 @media screen and (max-width:376px){
     .box{
-        margin-left: 12%;
+        margin-left: 9%;
     }
     .contact{
         margin-left: 40%;
@@ -393,6 +412,9 @@ width: auto;
 }
 
 @media screen and (max-width:321px) {
+    .box{
+        margin-left: 10%;
+    }
     .contact    {
         margin-left: 45%;
     }
