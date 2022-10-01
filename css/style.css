@@ -115,7 +115,7 @@ section{
     scrollbar-width: none;
     color: var(--color-text);
     width: 60%;
-    filter: blur(0);
+    
 }
 .nextLine{
     display: block;

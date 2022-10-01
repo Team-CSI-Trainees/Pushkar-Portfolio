@@ -12,6 +12,7 @@
     />
     <link rel="stylesheet" href="css/normalise.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Pushkar Portfolio</title>
   </head>
   <body>
@@ -46,7 +47,7 @@
 
     <div class="boxTop" id="aboutTop"></div>
     <section class="box" id="about">
-      <div class="details">
+      <div class="details" data-aos="fade-up">
         <h2 class="headings">
           Hello! <br />
           My name is
@@ -59,7 +60,12 @@
           guitar.
         </p>
       </div>
-      <div class="profilePic">
+      <div
+        class="profilePic"
+        data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000"
+      >
         <img src="images/pic.jpg" alt="" />
       </div>
     </section>
@@ -86,7 +92,7 @@
       <h2 class="headings">Projects</h2>
       <hr />
       <div class="projects">
-        <div class="project">
+        <div class="project" data-aos="zoom-out-down">
           <a
             href="https://pushkar-28.github.io/StrangerThingsClone/"
             target="_blank"
@@ -95,17 +101,17 @@
           </a>
           <!-- <p class="description">Netflix's Stranger Things webpage clone</p> -->
         </div>
-        <div class="project">
+        <div class="project" data-aos="zoom-out-down">
           <a href="https://pushkar-28.github.io/TimeWaste/" target="_blank"
             ><img src="images/TimeWaste.jpg" alt=""
           /></a>
         </div>
-        <div class="project">
+        <div class="project" data-aos="zoom-out-down">
           <a target="_blank" href="https://pushkar-28.github.io/Drum-kit/"
             ><img src="images/DrumKit.jpg" alt=""
           /></a>
         </div>
-        <div class="project">
+        <div class="project" data-aos="zoom-out-down">
           <a target="_blank" href="https://pushkar-28.github.io/pushkarnite/"
             ><img src="images/pushkarnite.jpg" alt=""
           /></a>
@@ -115,7 +121,7 @@
 
     <div class="boxTop"></div>
     <section class="box" id="contactBox">
-      <div class="contactForm">
+      <div class="contactForm" data-aos="fade-left">
         <h2 class="headings">Contact Me</h2>
         <hr />
         <form action="https://formspree.io/f/xknebwyj" method="post">
@@ -181,5 +187,9 @@
     <p class="text">©Pushkar Khare</p>
     <!-- Adding Javascript -->
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
