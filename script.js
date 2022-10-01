@@ -20,7 +20,7 @@ topButton.addEventListener('click',topFunc);
 
 
 // Collapse nav bar
-const collapsibles = document.querySelectorAll(".collapsible");
-item.addEventListener("click", function () {
-  this.classList.toggle("collapsible--expanded");
-})
+// const collapsibles = document.querySelectorAll(".collapsible");
+// item.addEventListener("click", function () {
+//   this.classList.toggle("collapsible--expanded");
+// })

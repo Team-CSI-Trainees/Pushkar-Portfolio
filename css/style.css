@@ -291,6 +291,7 @@ width: auto;
 }
 
 @media screen and (max-width:767px) {
+
     /* About section */
     #about{
         flex-direction: column-reverse;
@@ -336,13 +337,7 @@ width: auto;
 
     }
     /* Contact Form */
-    /* input,textarea{
-        width: 80%;
-        
-        padding: 0.3rem;
-        margin: 0.7rem auto;
-        
-    } */
+   
     #contactBox{
         justify-content: center;
     }
@@ -355,10 +350,19 @@ width: auto;
 
 @media screen and (max-width:600px) {
 
+    /* Nav Bar */
+    /* .navLink{
+    display: none;
+    } */
+    /* .navRight{
+       
+    } */
+
     /* box */
     .box{
         /* margin-left: 5rem; */
     }
+
     /* Contact Form */
     .contactForm{
         width: 100%;
@@ -369,6 +373,7 @@ width: auto;
     .projects{
         width: 95%;
     }
+
     /* Submit button */
     .submitForm{
         margin-left: 40%;
