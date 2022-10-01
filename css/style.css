@@ -268,10 +268,6 @@ width: auto;
 @media screen and (max-width:950px) {
     .contactForm{
         width: 35%;
-        margin-right:0 ;
-    }
-    #contactBox{
-        justify-content: center;
     }
 }
 
@@ -315,17 +311,89 @@ width: auto;
         height: 80%;
     }
 
+    /* Top Button */
+    .top{
+        left: 80%;
 
+    }
     /* Contact Form */
     /* input,textarea{
         width: 80%;
         
         padding: 0.3rem;
         margin: 0.7rem auto;
-    
+        
     } */
+    #contactBox{
+        justify-content: center;
+    }
     .contactForm{
         /* margin-right: 7%; */
-        width: 40%;
+        margin-right:0 ;
+        width: 45%;
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    /* box */
+    .box{
+        /* margin-left: 5rem; */
+    }
+    /* Contact Form */
+    .contactForm{
+        width: 100%;
+        margin-right: 2rem;
+    }
+
+    /* Project Image */
+    .projects{
+        width: 95%;
+    }
+    /* Submit button */
+    .submitForm{
+        margin-left: 40%;
+    }
+
+}
+@media screen  and (max-width:450px) {
+
+    /* box */
+    .box{
+        margin-left: 8%;
+        /* width: 100%; */
+        /* margin-right: 4%; */
+        /* margin-left: 12.5%; */
+        min-width:400px ;
+    }
+
+}
+
+@media screen and (max-width:424px) {
+    
+/* Contact icons */
+.contact{
+    /* margin-left: 20vw; */
+}
+.icons{
+    transform: scale(1.2);
+}
+.icons:hover{
+    transform: scale(1.5);
+}
+}
+
+@media screen and (max-width:376px){
+    .box{
+        margin-left: 12%;
+    }
+    .contact{
+        margin-left: 40%;
+    }
+}
+
+@media screen and (max-width:321px) {
+    .contact    {
+        margin-left: 45%;
     }
 }
