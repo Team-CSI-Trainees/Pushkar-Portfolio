@@ -3,9 +3,9 @@
     --color-secondary: #2b2d42;
     --color-accent: #ef233c;
     --color-text: #edf2f4;
-    --color-headingDarker: #d90429;
+    --color-headingDarker: #025068;
     --color-hgDarker: #080808;
-    --color-textAlt: #090797;
+    --color-textAlt: #363499;
     
 }
 
@@ -44,7 +44,7 @@ section{
 .box{
     border: var(--color-secondary) 2px solid;
     width: 90%;
-
+    background: url('/images/backgroundBlur.webp');
     margin: 5rem auto 10rem auto;
     border-radius: 10px;
     box-shadow: 0 0 5px 5px;
@@ -97,6 +97,9 @@ section{
     text-decoration: underline;
 }
 
+.collapsibleIcon{
+    display: none;
+}
 /* ABOUT----------------------------------------- */
 #about{
     min-height: 50rem;
@@ -153,10 +156,45 @@ section{
 }
 
 /* ---------------Skills */
+@keyframes load{
+    from {
+      width: 0%
+    }
+}
 #skillDetails{
     padding-left: 2rem;
+    display: flex;
+    flex-direction: column;
 }
-
+.skill{
+  background-color: #EEE;
+  padding: 0.2rem;
+  width: 80%;
+  margin: auto;
+  border-radius: 1rem;
+  margin-bottom: 1.5rem;
+  animation-name: load 2s 0s;
+  font-size: 2rem;
+  color: var(--color-text);
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+.skill::before{
+    content:  attr(data-skill);
+    background-color: var(--color-textAlt);
+    display: inline-block;
+    padding: 1rem ;
+    border-radius: inherit;
+    animation: load 2s 0s;
+  }
+.skill.basic::before{
+    width: calc(40% - 10px);
+ }
+.skill.intermediate::before{
+    width: calc(70% - 10px);
+}
+.skill.advanced::before{
+    width: calc(95% - 10px);
+}
 /*                      ----------------- Projects */
 .projects{
     width: 90%;
@@ -197,9 +235,19 @@ section{
 #contactBox{
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+}
+.profileTwo{
+    width: 50%;
+    
+}
+.profileTwo img{
+    width: 60%;
+    /* height: 80%; */
+    object-fit: cover;
 }
 .contactForm{
-    background: var(--color-accent);
+    background: var(--color-headingDarker);
     /* border: var(--color-headingDarker) groove 10px; */
     display: flex;
     width: 30%;
@@ -286,10 +334,34 @@ width: auto;
     .contactForm{
         width: 35%;
     }
+    .profileTwo{
+        /* width: 60%; */
+        object-fit: contain;
+        margin-left: 2rem;
+        
+    }
+    .profileTwo img{
+        width: 80%;
+    }
 }
 
 @media screen and (max-width:767px) {
 
+    /* nav */
+    .collapsibleIcon{
+        display: block;
+    }
+    .navRight{
+        flex-direction: column;
+        margin-top: 20rem;
+        margin-right: 0;
+    }   
+    /* .collapsible{
+        opacity: 0;
+    } */
+    .collapsible--expanded{
+    opacity: 0;
+    }
     /* About section */
     #about{
         flex-direction: column-reverse;
@@ -336,6 +408,9 @@ width: auto;
     }
     /* Contact Form */
    
+    .profileTwo{
+        display: none;
+    }
     #contactBox{
         justify-content: center;
     }
@@ -349,17 +424,8 @@ width: auto;
 @media screen and (max-width:600px) {
 
     /* Nav Bar */
-    /* .navLink{
-    display: none;
-    } */
-    /* .navRight{
-       
-    } */
-
     /* box */
-    .box{
-        /* margin-left: 5rem; */
-    }
+
 
     /* Contact Form */
     .contactForm{
@@ -394,9 +460,7 @@ width: auto;
 @media screen and (max-width:424px) {
     
 /* Contact icons */
-.contact{
-    /* margin-left: 20vw; */
-}
+
 .icons{
     transform: scale(1.2);
 }

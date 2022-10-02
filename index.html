@@ -21,7 +21,9 @@
     <nav class="navBar">
       <div><img class="logo" src="images/l.svg" alt="" /></div>
       <div class="navRight">
-        <a href="#aboutTop" class="navLink collapsible--expanded"
+        <img class="collapsibleIcon" src="icons/menu.svg" alt="" />
+
+        <a href="#aboutTop" class="navLink  collapsible--expanded"
           ><span>About</span></a
         >
         <a href="#skillsTop" class="navLink collapsible--expanded"
@@ -75,14 +77,12 @@
       <h2 class="headings">Skills</h2>
       <hr />
       <p id="skillDetails">
-        Languages I speak: <br />
-        <span class="text"> HTML,</span>
-        <span class="text">CSS,</span>
-        <span class="text">Javascript,</span>
-        <span class="text">Git,</span>
-        <span class="text">C,</span>
-        <span class="text">Python,</span>
-        <span class="text">Sql</span>
+        <div class="skill intermediate back" data-skill ="C"></div>
+        <div class="skill intermediate" data-skill ="Python"></div>
+        <div class="skill advanced" data-skill ="Html"></div>
+        <div class="skill advanced" data-skill ="Css"></div>
+        <div class="skill basic" data-skill ="Javascript"></div>
+        <div class="skill basic" data-skill ="Sql"></div>
       </p>
     </section>
     <!--=================== Projects -->
@@ -90,8 +90,8 @@
     <section class="box" id="projectBox">
       <h2 class="headings">Projects</h2>
       <hr />
-      <div class="projects">
-        <div class="project" data-aos="zoom-out-down">
+      <div class="projects" data-aos="zoom-out-down">
+        <div class="project">
           <a
             href="https://pushkar-28.github.io/StrangerThingsClone/"
             target="_blank"
@@ -100,17 +100,17 @@
           </a>
           <!-- <p class="description">Netflix's Stranger Things webpage clone</p> -->
         </div>
-        <div class="project" data-aos="zoom-out-down">
+        <div class="project">
           <a href="https://pushkar-28.github.io/TimeWaste/" target="_blank"
             ><img src="images/TimeWaste.jpg" alt=""
           /></a>
         </div>
-        <div class="project" data-aos="zoom-out-down">
+        <div class="project">
           <a target="_blank" href="https://pushkar-28.github.io/Drum-kit/"
             ><img src="images/DrumKit.jpg" alt=""
           /></a>
         </div>
-        <div class="project" data-aos="zoom-out-down">
+        <div class="project">
           <a target="_blank" href="https://pushkar-28.github.io/pushkarnite/"
             ><img src="images/pushkarnite.jpg" alt=""
           /></a>
@@ -120,6 +120,14 @@
 
     <div class="boxTop"></div>
     <section class="box" id="contactBox">
+      <div
+        class="profileTwo"
+        data-aos="flip-right"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000"
+      >
+        <img src="/images/ProfileXx.jpg" alt="" />
+      </div>
       <div class="contactForm" data-aos="fade-left">
         <h2 class="headings">Contact Me</h2>
         <hr />
