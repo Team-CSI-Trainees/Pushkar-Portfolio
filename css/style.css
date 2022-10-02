@@ -15,7 +15,7 @@ html {
 }
 
 body{
-background-image: url('.images/background.jpg');
+background-image: url(background.jpg);
 background-repeat: no-repeat;
 background-attachment: fixed;
 background-size: cover;
@@ -44,7 +44,7 @@ section{
 .box{
     border: var(--color-secondary) 2px solid;
     width: 90%;
-    background: url('..images/backgroundBlur.webp');
+    background: url(backgroundBlur.webp);
     margin: 5rem auto 10rem auto;
     border-radius: 10px;
     box-shadow: 0 0 5px 5px;
