@@ -15,7 +15,7 @@ html {
 }
 
 body{
-background-image: url('/images/background.jpg');
+background-image: url('../images/background.jpg');
 background-repeat: no-repeat;
 background-attachment: fixed;
 background-size: cover;
@@ -84,22 +84,28 @@ section{
     display: flex;
     list-style: none;
     align-items: center;
+    overflow: hidden;
 }
 .navLink{
     text-decoration: none;
     color: var(--color-heading);
     padding: 1rem;
 }
-
 .navLink:hover{
     transform: scale(1.1);
     transition: all 0.2s;
     text-decoration: underline;
 }
+/* .navRight a{
+    display: block;
+} */
 
-.collapsibleIcon{
-    display: none;
+/* .show{
+    display: block;
 }
+.collapsible--expanded{
+    display: none;
+} */
 /* ABOUT----------------------------------------- */
 #about{
     min-height: 50rem;
@@ -185,13 +191,13 @@ section{
     animation: load 2s 0s;
   }
 .skill.basic::before{
-    width: calc(40% - 10px);
+    width: calc(40%);
  }
 .skill.intermediate::before{
-    width: calc(70% - 10px);
+    width: calc(70%);
 }
 .skill.advanced::before{
-    width: calc(95% - 10px);
+    width: calc(95%);
 }
 /*                      ----------------- Projects */
 .projects{
@@ -346,20 +352,25 @@ width: auto;
 @media screen and (max-width:767px) {
 
     /* nav */
-    .collapsibleIcon{
-        display: block;
+    .logo{
+        margin-left: 0.3rem;
+        width: 12rem;
     }
     .navRight{
-        flex-direction: column;
-        margin-top: 20rem;
-        margin-right: 0;
+        /* flex-direction: column; */
+        /* margin-top: 10rem; */
+        margin-right: 1rem;
+        font-size: large;
+        padding: 1rem;
     }   
-    /* .collapsible{
-        opacity: 0;
-    } */
-    .collapsible--expanded{
-    opacity: 0;
+    /* Box */
+    .boxTop{
+        height: 1rem;
     }
+    .box{
+        margin-bottom: 1.5rem;
+    }
+    
     /* About section */
     #about{
         flex-direction: column-reverse;
@@ -388,8 +399,8 @@ width: auto;
     .nextLine{
         display: inline;
     }
-
-
+    
+    
     /* Projects section */
     .projects{
         grid-template-columns: auto;
@@ -402,10 +413,10 @@ width: auto;
     /* Top Button */
     .top{
         left: 80%;
-
+        
     }
     /* Contact Form */
-   
+    
     .profileTwo{
         display: none;
     }
@@ -423,12 +434,44 @@ width: auto;
 
     /* Nav Bar */
     /* box */
-
-
+    /* nav */
+    .logo{
+        margin-left: 0.3rem;
+        width: 10rem;
+    }
+    .navRight{
+        /* flex-direction: column; */
+        /* margin-top: 10rem; */
+        margin-right: 1rem;
+        font-size: medium;
+        padding: 0;
+    }   
+    .boxTop{
+        height: 0.5rem;
+    }
+    .box{
+        margin-bottom: 1rem;
+    }
+    /* skills */
+    #skillDetails{
+        padding-left: 1rem;
+    }
+    .skill{
+        width: 90%;
+    }
+    .skill.basic::before{
+        width: calc(30%);
+     }
+    .skill.intermediate::before{
+        width: calc(60%);
+    }
+    .skill.advanced::before{
+        width: calc(85%);
+    }
     /* Contact Form */
     .contactForm{
-        width: 100%;
-        margin-right: 2rem;
+        width: 90%;
+        margin: 2rem;
     }
 
     /* Project Image */
@@ -444,19 +487,39 @@ width: auto;
 }
 @media screen  and (max-width:450px) {
 
+    /* skills */
+    #skillDetails{
+        padding-left: 0.5rem;
+    }
+    .skill{
+        width: 95%;
+    }
     /* box */
     .box{
         margin-left: 4%;
-        /* width: 100%; */
-        /* margin-right: 4%; */
-        /* margin-left: 12.5%; */
-        min-width:400px ;
+        
     }
-
+   .details{
+    margin-left: 1rem;
+   }
+   .navBar{
+    width: 100%;
+   }
 }
 
 @media screen and (max-width:424px) {
-    
+    /* nav */
+    .logo{
+        margin-left: 0.3rem;
+        width: 10rem;
+    }
+    .navRight{
+        /* flex-direction: column; */
+        /* margin-top: 10rem; */
+        margin-right: 0.3rem;
+        font-size: small;
+        padding: 0;
+    }   
 /* Contact icons */
 
 .icons{
@@ -467,18 +530,25 @@ width: auto;
 }
 }
 
-@media screen and (max-width:376px){
-    .box{
-        margin-left: 9%;
+@media screen and (max-width:380px) {
+    /* nav */
+    .logo{
+        margin-left: 0.3rem;
+        width: 8rem;
     }
-    .contact{
-        margin-left: 40%;
-    }
+    .navRight{
+        
+        margin-right: 0rem;
+        font-size: x-small;
+        padding: 0;
+    }   
 }
-
 @media screen and (max-width:321px) {
     .box{
         margin-left: 10%;
+    }
+    .navBar{
+        width: 107%;
     }
     .contact    {
         margin-left: 45%;

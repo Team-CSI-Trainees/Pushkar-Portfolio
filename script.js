@@ -20,7 +20,8 @@ topButton.addEventListener('click',topFunc);
 
 
 // Collapse nav bar
-// const collapsibles = document.querySelector(".collapsibleIcon");
-// collapsibles.addEventListener("click", function () {
-//   this.classList.toggle("collapsible--expanded");
-// })
+// function dropDown(){
+//     document.getElementById('myDropDown').classList.toggle('show');
+// }
+
+

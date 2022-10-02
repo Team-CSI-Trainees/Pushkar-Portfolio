@@ -21,26 +21,22 @@
     <nav class="navBar">
       <div><img class="logo" src="images/l.svg" alt="" /></div>
       <div class="navRight">
-        <img class="collapsibleIcon" src="icons/menu.svg" alt="" />
+        <!-- <button class="dropBtn" onclick="dropDown()">
+          <img src="icons/menu.svg" alt="" />
+        </button> -->
 
-        <a href="#aboutTop" class="navLink  collapsible--expanded"
-          ><span>About</span></a
-        >
-        <a href="#skillsTop" class="navLink collapsible--expanded"
-          ><span>Skills</span></a
-        >
+        <!-- <div class="dropdown-content" id="myDropDown"> -->
+        <a href="#aboutTop" class="navLink"><span>About</span></a>
+        <a href="#skillsTop" class="navLink"><span>Skills</span></a>
         <a
           href="https://drive.google.com/file/d/16etR2QQR76Fcsaq9DCEMtef9wo5YUhVU/view?usp=sharing"
           target="_blank"
-          class="navLink collapsible--expanded"
+          class="navLink"
           ><span>Resume</span></a
         >
-        <a href="#projectBoxTop" class="navLink collapsible--expanded"
-          ><span>Projects</span></a
-        >
-        <a href="#contactBox" class="navLink collapsible--expanded"
-          ><span>Contact</span></a
-        >
+        <a href="#projectBoxTop" class="navLink"><span>Projects</span></a>
+        <a href="#contactBox" class="navLink"><span>Contact</span></a>
+        <!-- </div> -->
       </div>
     </nav>
     <!-- <hr /> -->
@@ -76,14 +72,14 @@
     <section id="skills" class="box">
       <h2 class="headings">Skills</h2>
       <hr />
-      <p id="skillDetails">
-        <div class="skill intermediate back" data-skill ="C"></div>
-        <div class="skill intermediate" data-skill ="Python"></div>
-        <div class="skill advanced" data-skill ="Html"></div>
-        <div class="skill advanced" data-skill ="Css"></div>
-        <div class="skill basic" data-skill ="Javascript"></div>
-        <div class="skill basic" data-skill ="Sql"></div>
-      </p>
+      <div id="skillDetails">
+        <div class="skill intermediate back" data-skill="C"></div>
+        <div class="skill intermediate" data-skill="Python"></div>
+        <div class="skill advanced" data-skill="Html"></div>
+        <div class="skill advanced" data-skill="Css"></div>
+        <div class="skill basic" data-skill="Javascript"></div>
+        <div class="skill basic" data-skill="Sql"></div>
+      </div>
     </section>
     <!--=================== Projects -->
     <div class="boxTop" id="projectBoxTop"></div>
@@ -128,7 +124,8 @@
       >
         <img src="images/ProfileXx.jpg" alt="" />
       </div>
-      <div class="contactForm" data-aos="fade-left">
+      <!--  -->
+      <div class="contactForm">
         <h2 class="headings">Contact Me</h2>
         <hr />
         <form action="https://formspree.io/f/xknebwyj" method="post">
