@@ -160,7 +160,7 @@ section{
 }
 
 /* ---------------Skills */
-@keyframes load{
+/* @keyframes load{
     from {
       width: 0%
     }
@@ -198,7 +198,25 @@ section{
 }
 .skill.advanced::before{
     width: calc(95%);
+} */
+
+.skillsWrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
+.skills{
+    height: 100px;
+    width: 120px;
+    margin:  5px;
+    justify-self: center;
+    align-self: center;    
+    background: transparent;
+    object-fit: contain;
+    overflow: hidden;
+}
+
 /*                      ----------------- Projects */
 .projects{
     width: 90%;
